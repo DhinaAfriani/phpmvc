@@ -5,21 +5,26 @@ class Siswa extends Controller{
     public function  index(){
         
     $data = [
-        'title' => this->$data['title'],
+        // 'title' => this->$data['title'],
         'nama' => 'queen'
-    public function index(){
-        $data['nama'] = "joshua";
+    ];
+
+        $data['title ']= "siswa";
+        $data['nama']= "queen";
         $this->view("templates/header", $data);
         $this->view("siswa/index", $data);
         $this->view("templates/footer", $data);
     }
 
-    public function biodata(){
-        $data['kelas'] = xi pplg 1;
+    public function biodata()
+    {
+        $data['title']='biodata';
+        $data['kelas'] = 'xi pplg 1';
+
         $this->view("template/header", $data);
         $this->view("template/footer", $data);
         $this->view("siswa/detail", $data);
-        echo"ini adalah siswa/index";
+        // echo"ini adalah siswa/index";
         
     }
 }
